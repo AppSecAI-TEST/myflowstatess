@@ -1,6 +1,8 @@
 # myflowstatess
 防支付宝快递状态信息。
 
+[![](https://jitpack.io/v/ky48302430/myflowstatess.svg)](https://jitpack.io/#ky48302430/myflowstatess)
+
 
 
 

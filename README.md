@@ -5,6 +5,7 @@
 
 
 Step 1.
+
 	allprojects {
 		repositories {
 			...

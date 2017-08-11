@@ -8,6 +8,7 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.Rect;
 import android.graphics.RectF;
+import android.os.Looper;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.View;
@@ -208,6 +209,11 @@ public class FlowStatesView extends View {
     public void setSycnSelected(int selected) {
         setSelected(selected);
         this.selected = getSelected();
-        invalidate();
+
+        if( Looper.getMainLooper().getThread() == Thread.currentThread()){
+            invalidate();
+        }else {
+            postInvalidate();
+        }
     }
 }

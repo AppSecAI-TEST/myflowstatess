@@ -23,7 +23,8 @@ Step 2. Add the dependency
 	}
 	
 Xml 布局
-   <cyber.myflowstates.FolwStatesView
+
+     <cyber.myflowstates.FolwStatesView
         android:id="@+id/fsview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

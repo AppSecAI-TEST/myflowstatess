@@ -33,7 +33,7 @@ public class FlowStatesView extends View {
 
     private String  mShowTexts;//  xxxxx,xxxxx,xxxxx,xxxx;
 
-    private int   mText_Num; //显示几段圆点
+    private int   mCircl_Num; //显示几段圆点
     private String [] strs;
 
     private float mCirleRadius; //圆点半径
@@ -106,7 +106,7 @@ public class FlowStatesView extends View {
 
         if(mShowTexts.indexOf(",")!=-1){
             strs  = mShowTexts.split(",");
-            mText_Num = strs.length;
+            mCircl_Num = strs.length;
         }else {
             throw new Exception(" 状态数据个数必须大于1，请确认！");
         }
@@ -122,13 +122,13 @@ public class FlowStatesView extends View {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         mWidth  = getMeasuredWidth();
         mHeigh  = getMeasuredHeight();
-        mLineWidth = (mWidth - getPaddingRight() - getPaddingLeft())/(mText_Num);
+        mLineWidth = (mWidth - getPaddingRight() - getPaddingLeft())/(mCircl_Num);
     }
 
 
     @Override
     protected void onDraw(Canvas canvas) {
-        for(int i = 0;i< mText_Num;i++){
+        for(int i = 0;i< mCircl_Num;i++){
             float cx = mLineWidth/2  + (i * 1)*(mLineWidth);  //圆心坐标
             mPaint.setColor(DEFAULT_COLOR);
             mLinePaint.setColor(DEFAULT_COLOR);
@@ -139,7 +139,7 @@ public class FlowStatesView extends View {
                 mTextPaint.setColor(Color.WHITE);
             }
             canvas.drawCircle(cx ,mHeigh/2,mCirleRadius,mPaint);
-            if(i < (mText_Num -1)){
+            if(i < (mCircl_Num -1)){
                 canvas.drawLine(cx + blockBord,mHeigh/2 ,
                                 cx + mLineWidth - blockBord ,mHeigh/2
                         ,mLinePaint);
@@ -157,7 +157,7 @@ public class FlowStatesView extends View {
         String s;
         if(i == 0 && !isEmpty(mStartInfo)){
             s = mStartInfo;
-        }else if(i == mText_Num -1 && !isEmpty(mEndInfo)){
+        }else if(i == mCircl_Num -1 && !isEmpty(mEndInfo)){
             s = mEndInfo;
         }else{
             return;

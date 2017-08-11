@@ -2,7 +2,7 @@
 防支付宝快递状态信息。
 
 [![](https://jitpack.io/v/ky48302430/myflowstatess.svg)](https://jitpack.io/#ky48302430/myflowstatess)
-
+![Alt text](https://github.com/ky48302430/myflowstatess/raw/master/Screenshots/0811_09_13_01.png)
 
 
 

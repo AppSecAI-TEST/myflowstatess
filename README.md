@@ -1,5 +1,5 @@
 # myflowstatess
-防支付宝快递状态信息。
+防支付宝快递状态信息。  各状态文字 数量可自定义修改 
 
 [![](https://jitpack.io/v/ky48302430/myflowstatess.svg)](https://jitpack.io/#ky48302430/myflowstatess)
 ![Alt text](https://github.com/ky48302430/myflowstatess/blob/master/myflowstates/Screenshots/0811_09_13_01.png)

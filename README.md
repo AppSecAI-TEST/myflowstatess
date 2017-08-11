@@ -24,6 +24,14 @@ Step 2. Add the dependency
 	
 Xml 布局
 
+     <declare-styleable name="FlowStatesView">
+             <attr name="ShowTexts" />
+             <attr name="CheckColor" />
+             <attr name="TextSize" />
+             <attr name="StartInfo" />
+             <attr name="EndInfo" />
+     </declare-styleable>
+
      <cyber.myflowstates.FolwStatesView
         android:id="@+id/fsview"
         android:layout_width="match_parent"

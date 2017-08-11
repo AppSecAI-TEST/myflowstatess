@@ -199,12 +199,15 @@ public class FlowStatesView extends View {
         return selected;
     }
 
-    public void setSelected(int selected) {
+    private void setSelected(int selected) {
+        if(selected <= 0){this.selected = 0; return;}
+        if(selected >= mCircl_Num){this.selected = mCircl_Num; return;}
         this.selected = selected;
     }
 
     public void setSycnSelected(int selected) {
-        this.selected = selected;
+        setSelected(selected);
+        this.selected = getSelected();
         invalidate();
     }
 }

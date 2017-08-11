@@ -82,7 +82,7 @@ public class FlowStatesView extends View {
             } else if (attr == R.styleable.FlowStatesView_EndInfo) {
                 mEndInfo = a.getString(attr);
 
-            } else if (attr == R.styleable.FlowStatesView_TextColor) {
+            } else if (attr == R.styleable.FlowStatesView_CheckColor) {
                 mCheckColor = a.getColor(attr, DEFAULT_CHECK_COLOR);
 
             } else if (attr == R.styleable.FlowStatesView_TextSize) {// 默认设置为16sp，TypeValue把sp转化为px

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <attr name="ShowTexts" format="string" />
-    <attr name="TextColor" format="color" />
+    <attr name="CheckColor" format="color" />
     <attr name="TextSize"  format="dimension" />
     <attr name="StartInfo" format="string" />
     <attr name="EndInfo" format="string" />
 
     <declare-styleable name="FlowStatesView">
         <attr name="ShowTexts" />
-        <attr name="TextColor" />
+        <attr name="CheckColor" />
         <attr name="TextSize" />
         <attr name="StartInfo" />
         <attr name="EndInfo" />
